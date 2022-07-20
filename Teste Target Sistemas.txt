@@ -1,0 +1,91 @@
+****** Pergunta 1 *********
+SOMA retorna o valor 78.
+
+****** Pergunta 2 *************
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+   int a, b, fib, n, x=0; ;
+
+    printf ("Informe um numero: ");
+    scanf ("%d", &n);
+
+    a = 0;
+    b = 1;
+
+
+    for (int i = 1; i <= 15; i++ )
+     {
+        if (i == 1)
+         {
+            printf (" %d " ,a);
+         }
+        else if (i == 2)
+         {
+            printf (" %d ", b);
+         }
+        else
+         {
+            fib = a + b;
+            a = b;
+            b = fib;
+            printf(" %d ", fib);
+         }
+
+        if(n == fib)
+         {
+            x++;
+         }
+     }
+
+    if(x == 1)
+     {
+        printf("\nPertence a sequencia!");
+     }
+    else
+     {
+        printf("\n pertence a sequencia!");
+     }
+
+    return 0;
+}
+
+****** Pergunta 3 ***********
+
+
+a-) 9
+b-) 128
+c-) 49
+d-) 100
+e-) 13
+f-) 200
+
+********* Pergunta 4 *********
+
+Os dois estarão a mesma distância de Ribeirão Preto. Pois mesmo que a velocidade for diferente
+ou que tenham gastado mais ou menos tempo no pedágio, quando se cruzam estão na exata mesma
+diferença de distância em relação a Ribeirão Preto.
+
+********* Pergunta 5 ***********
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char palavra[7] = {'T','a','r','g','e','t'};
+
+    for(int i = 7; i >= 0; i--)
+        {
+            printf(" %c ", palavra[i]);
+        }
+
+}
+
+
+
+
+
